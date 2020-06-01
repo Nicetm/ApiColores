@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('partials/header') %>
+    <title>Document</title>
+</head>
+<body>
+    <%- include('partials/nav') %>
+    <div class="container p-3">
+        <form method="POST" action="/new-color" class="card card-body">
+            <div class="form-group">
+                <label for="">ID</label>
+                <input type="text" class="form-control" name="id" id="" placeholder="ID" autofocus required>   
+            </div>
+            <div class="form-group">
+                <label for="">Name</label>
+                <input type="text" class="form-control" name="name" id="" placeholder="Nombre Color" autofocus required>   
+            </div>
+            <div class="form-group">
+                <label for="">Year</label>
+                <input type="text" class="form-control" name="year" id="" placeholder="Año" autofocus required>   
+            </div>
+            <div class="form-group">
+                <label for="">Color</label>
+                <input type="text" class="form-control" name="color" id="" placeholder="#FFFFFF" autofocus required>   
+            </div>
+            <div class="form-group">
+                <label for="">Pantone </label>
+                <input type="text" class="form-control" name="pantone_value" id="" placeholder="Pantone" autofocus required>   
+            </div>
+            <input type="submit" value="Color Entry" class="btn btn-info">
+        </form>
+    </div>
+</body>
+</html>

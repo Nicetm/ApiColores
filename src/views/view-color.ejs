@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('partials/header') %>
+    <title>Api Colores</title>
+</head>
+<body>
+    <%- include('partials/nav') %>
+    <div class="container">
+        <div class="row">
+            <% view.forEach(function(color) { %>
+            <div class="col-4 pt-5">
+                <div class="card text-white" style="width: 18rem; background-color: <%= color.color %>">
+                    <div class="card-header"><%= color.name %></div>
+                    <div class="card-body">
+                      <p class="card-title"><%= color.year %></p>
+                      <h2 class="card-text text-center p-4"><%= color.color %></h2>
+                      <p class="text-right"><%= color.pantone_value %></p>
+                    </div>
+                </div>
+            </div>
+            <% }) %>
+        </div>
+        <hr>
+    </div>
+</body>
+</html>
